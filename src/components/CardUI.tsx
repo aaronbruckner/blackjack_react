@@ -1,5 +1,5 @@
 import { Paper, Typography } from "@mui/material";
-import './Card.css'
+import './CardUI.css'
 
 export enum CardValue {
   Two = 2,
