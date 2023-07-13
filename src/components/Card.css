@@ -1,4 +1,5 @@
 .BlackjackCard {
+  max-width: 100px;
   margin: 10px;
 }
 
@@ -7,6 +8,6 @@
 }
 
 .BlackjackCard .ValueText {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

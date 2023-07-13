@@ -24,16 +24,19 @@ export enum CardSuit {
   Club = "club"
 }
 
-interface Props {
+export interface Props {
   value: CardValue,
   suit: CardSuit,
 }
 
+/**
+ * Renders an individual card with a specific suit and value.
+ */
 export default function Card({suit, value}: Props): JSX.Element {
-  return <Paper className="BlackjackCard" sx={{maxWidth:200}} elevation={10}>
-    <Typography className="SuitText" variant="h3" textAlign={"right"}>{suitToSymbol(suit)}</Typography>
-    <Typography className="ValueText" variant="h1" textAlign={"center"} >{valueToSymbol(value)}</Typography>
-    <Typography className="SuitText" variant="h3" textAlign={"left"}>{suitToSymbol(suit)}</Typography>
+  return <Paper className="BlackjackCard" elevation={10}>
+    <Typography className="SuitText" variant="h5" textAlign={"right"}>{suitToSymbol(suit)}</Typography>
+    <Typography className="ValueText" variant="h4" textAlign={"center"} >{valueToSymbol(value)}</Typography>
+    <Typography className="SuitText" variant="h5" textAlign={"left"}>{suitToSymbol(suit)}</Typography>
   </Paper>
 }
 
