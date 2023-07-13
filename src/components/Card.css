@@ -1,0 +1,12 @@
+.BlackjackCard {
+  margin: 10px;
+}
+
+.BlackjackCard .SuitText {
+  margin: 5px;
+}
+
+.BlackjackCard .ValueText {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
